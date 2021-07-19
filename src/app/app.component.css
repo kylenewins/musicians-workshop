@@ -1,0 +1,16 @@
+.active-link{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+body {
+    background-color: black
+}
+
+#nav-button{
+    margin-right:10px
+}
+
+.block{
+    display: block
+}
