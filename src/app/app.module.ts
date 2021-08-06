@@ -12,6 +12,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import {MatMenuModule} from '@angular/material/menu'
 import {MatButtonModule} from '@angular/material/button'
+import {MatSidenavModule} from '@angular/material/sidenav'
+import {MatToolbarModule} from '@angular/material/toolbar'
+
+import {IvyCarouselModule} from 'angular-responsive-carousel';
+
+import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -27,7 +33,11 @@ import {MatButtonModule} from '@angular/material/button'
     AppRoutingModule,
     BrowserAnimationsModule,
     MatMenuModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSidenavModule,
+    IvyCarouselModule,
+    FontAwesomeModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

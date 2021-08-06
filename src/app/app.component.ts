@@ -4,7 +4,7 @@ import {Router} from '@angular/router'
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css', '../assets/hover.css']
 })
 export class AppComponent {
   title = 'musicians-workshop';
@@ -14,7 +14,7 @@ export class AppComponent {
     ) {}
 
   ngAfterViewInit() {
-    this._elementRef.nativeElement.ownerDocument.body.style.backgroundColor = 'gray';
+    this._elementRef.nativeElement.ownerDocument.body.style.overflow= 'hidden';
   }
 
   getRoute(){

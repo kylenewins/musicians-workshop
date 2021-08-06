@@ -1,0 +1,33 @@
+#brand-carousel{
+  /* background-color: black;
+  color: whitesmoke; */
+}
+
+#brand-carousel h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#coming-soon{
+  text-align: center;
+  margin-top: 40vh;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 400%;
+}
+
+#cog-container{
+  margin-left: 40vw;
+  margin-top: 100px;
+  position: absolute;
+
+}
+
+@media only screen and (max-width: 600px) {
+  #coming-soon{
+    margin-top: 30vh;
+    line-height: 110%;
+  }
+  #cog-container{
+    margin-top: 100px;
+    position: absolute;
+  }
+}

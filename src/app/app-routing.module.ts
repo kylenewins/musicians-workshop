@@ -7,7 +7,8 @@ import {ReverbComponent} from './reverb/reverb.component'
 import {RockShopComponent} from './rock-shop/rock-shop.component'
 
 const routes: Routes = [
-  {path: "" , component: HomeComponent},
+  {path: "" , redirectTo: "/home", pathMatch:"full"},
+  {path: "home" , component: HomeComponent},
   {path: "contact" , component: ContactComponent},
   {path: "lessons" , component: LessonsComponent},
   {path: "reverb" , component: ReverbComponent},

@@ -1,16 +1,52 @@
 .active-link{
-    text-decoration: underline;
     font-weight: bolder;
+    background-color: rgba(0, 0, 0, .4)
 }
 
 body {
     background-color: black
 }
 
-#nav-button{
-    margin-right:10px
+.nav-button{
+    margin-bottom:10px;
+    color: white;
+    width: 100%;
+    font-size: 150%;
+    border: none;
+    font-family: 'Ubuntu', sans-serif;
+
 }
+
 
 .block{
     display: block
 }
+
+.container{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: darkgray;
+  }
+
+  #side-nav{
+      width: 15vw;
+      background: darkred;
+  }
+
+  #logo{
+      width: 150px;
+  }
+
+  @media only screen and (max-width: 1000px) {
+   #logo{
+       display: none;
+   }
+  }
+
+
+
+
+  

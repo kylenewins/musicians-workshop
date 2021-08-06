@@ -39,7 +39,7 @@
     font-weight: 600;
   }
 
-  .toolbar img {
+  img {
     margin: 0 16px;
   }
 
@@ -94,7 +94,7 @@
 </style>
 
 <!-- Toolbar -->
-<div class="toolbar" role="banner">
+<!-- <div class="toolbar" role="banner">
   <img class="block"
     width="40"
     alt="Angular Logo"
@@ -110,10 +110,29 @@
     <a mat-menu-item class="nav-item nav-link" routerLink="/reverb" routerLinkActive="active-link">Reverb Shop</a>
     <a mat-menu-item class="nav-item nav-link" routerLink="/contact" routerLinkActive="active-link">Contact</a>
   </mat-menu>
-</div>
+</div> -->
+
 
 <div class="content" role="main">
-  <div>
-    <router-outlet></router-outlet>
-  </div>
+    <div>
+        <mat-sidenav-container class="container" >
+            <mat-sidenav mode="side" opened id="side-nav">
+                <img id="logo"
+                alt="Angular Logo"
+                src="../assets/logo1.png"
+                />
+                <!-- <button class="block" mat-stroked-button color="basic" block class="nav-button hvr-sweep-to-right" routerLink="/home" routerLinkActive="active-link">HOME</button>
+                <button class="block" mat-stroked-button color="basic" block class="nav-button hvr-sweep-to-right" routerLink="/lessons" routerLinkActive="active-link">LESSONS</button>
+                <button class="block" mat-stroked-button color="basic" block class="nav-button hvr-sweep-to-right" routerLink="/rockshop" routerLinkActive="active-link">ROCK-SHOP</button>
+                <button class="block" mat-stroked-button color="basic" block class="nav-button hvr-sweep-to-right" routerLink="/reverb" routerLinkActive="active-link">ONLINE STORE</button>
+                <button class="block" mat-stroked-button color="basic" block class="nav-button hvr-sweep-to-right" routerLink="/contact" routerLinkActive="active-link">CONTACT US</button> -->
+                <mat-menu #nav id="nav-menu">
+                    <a mat-menu-item class="nav-item nav-link" routerLink="/" routerLinkActive="active-link">Home</a>
+                </mat-menu>
+            </mat-sidenav>
+            <mat-sidenav-content>
+                <router-outlet></router-outlet>
+            </mat-sidenav-content>
+        </mat-sidenav-container>
+    </div>
 </div>
