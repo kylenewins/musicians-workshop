@@ -21,13 +21,37 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+#logo{
+  display: none;
+}
+
+@media only screen and (max-width: 810px) {
   #coming-soon{
-    margin-top: 30vh;
+    margin-top: 30px;
     line-height: 110%;
   }
   #cog-container{
     margin-top: 100px;
     position: absolute;
+  }
+  #logo{
+    width: 50%;
+  }
+
+}
+
+@media only screen and (max-width: 1000px){
+  #logo{
+    display: block;
+    /* position: absolute; */
+    margin-top:50px;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+  }
+  #coming-soon{
+    margin-top: 30px;
+    line-height: 110%;
   }
 }

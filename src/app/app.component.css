@@ -50,6 +50,9 @@ body {
    #logo{
        display: none;
    }
+   #logo-text{
+       display: none;
+   }
   }
 
 
