@@ -30,7 +30,13 @@ body {
     right: 0;
     background: darkgray;
   }
-
+  
+  #logo-text{
+    font-family: 'Ubuntu', sans-serif;
+    color: whitesmoke;
+    text-align: center;
+    top: 0;
+}
   #side-nav{
       width: 15vw;
       background: darkred;
